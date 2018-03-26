@@ -1,0 +1,25 @@
+<ion-view view-title="Score">
+  <ion-content ng-app="starter" ng-controller="ScoreCtrl">
+  	<h3 ng-model="congratMsg">{{congratMsg}}</h3>
+	  <ion-list>
+	  	<ion-item ng-repeat="score in scores">
+	  	  <ion-card>
+		  	<ion-card-header>
+		      <h2>Score</h2>
+		  	</ion-card-header>
+		  	  <ion-row>
+			    <ion-col>
+			      <div>Time: {{score.time}}</div>
+			    </ion-col>
+			    <ion-col>
+			      <div>Level: {{score.level}}</div>
+			    </ion-col>
+			    <ion-col>
+			      <div>Score: {{score.score}}</div>
+			    </ion-col>
+			  </ion-row>
+	      </ion-card>
+	  	</ion-item>
+	  </ion-list>
+  </ion-content>
+</ion-view>

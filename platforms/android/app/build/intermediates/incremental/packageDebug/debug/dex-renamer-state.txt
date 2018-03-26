@@ -1,0 +1,4 @@
+#Sun Mar 25 21:29:39 EDT 2018
+base.0=/Users/lastomato/Projects/MathQuiz/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/lastomato/Projects/MathQuiz/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

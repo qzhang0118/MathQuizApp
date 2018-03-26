@@ -1,0 +1,19 @@
+<ion-view view-title="Quizzes">
+  <ion-content class="padding" ng-app="starter" ng-controller="QuizzesCtrl">
+    <h1 class="text-center" ng-model="newscore.level">Level {{newscore.level}}</h1>
+    <div class="pull-right">
+      <h3 class="text-right" ng-model="newscore.score">Score: {{newscore.score}}</h3>
+    </div>
+    <div class="clearfix"></div>
+    <h2 class="text-center">{{numOne}} {{operate}} {{numTwo}} = ?</h2>
+    <ion-input class="item item-input">
+      <input type="text" placeholder="Enter your answer here." ng-model="inputAnswer" />
+      <button class="button button-balanced" ng-click="checkAnswer()" >Check</button>
+    </ion-input>
+    <div>
+     <img src="img/thumb.png" id="rightOrWrong" style="width: 50px; height: 50px;padding: 2px" />
+    </div>
+    <h3 ng-model="message">{{message}}</h3>
+    <p>Note: You have to answer at least 6 out of 10 questions in order to win!</p>
+  </ion-content>
+</ion-view>
