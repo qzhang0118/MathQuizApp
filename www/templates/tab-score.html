@@ -2,7 +2,7 @@
   <ion-content ng-app="starter" ng-controller="ScoreCtrl">
   	<h3 ng-model="congratMsg">{{congratMsg}}</h3>
 	  <ion-list>
-	  	<ion-item ng-repeat="score in scores">
+	  	<ion-item ng-repeat="score in scores track by $index">
 	  	  <ion-card>
 		  	<ion-card-header>
 		      <h2>Score</h2>

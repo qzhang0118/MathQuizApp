@@ -3,7 +3,6 @@ angular.module('starter.services', [])
 .service('Scores', function() {
   // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
   var scores = JSON.parse(window.localStorage.getItem('scores'));
   if (scores == null) {
     scores = [];
