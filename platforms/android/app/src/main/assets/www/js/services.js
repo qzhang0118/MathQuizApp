@@ -1,8 +1,6 @@
 angular.module('starter.services', [])
 
 .service('Scores', function() {
-  // Might use a resource here that returns a JSON array
-
   var scores = JSON.parse(window.localStorage.getItem('scores'));
   if (scores == null) {
     scores = [];
