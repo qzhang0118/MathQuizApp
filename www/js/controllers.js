@@ -101,8 +101,12 @@ angular.module('starter.controllers', ['starter.services'])
           if (result == this.inputAnswer) {
             $scope.correctAns++;
             img.src = 'img/Right.png';
+            var audio = new Audio("audio/success.wav");
+            audio.play();
           } else {
             img.src = 'img/Wrong.png';
+            var audio = new Audio("audio/fail.wav");
+            audio.play();
           }
           $scope.newscore.score = $scope.correctAns + ' / ' + $scope.guesses;
           $scope.numOne = Math.floor(Math.random() * Math.pow(10, $scope.newscore.level) + 1);
